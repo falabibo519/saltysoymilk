@@ -863,7 +863,7 @@ footer .legal{margin-top:56px;padding-top:24px;border-top:1px solid var(--hair-d
     const detail=rows.map(([n,x])=>n+"　"+(x<0?"-":"")+fmt(Math.abs(x))).join("\n");
     $("out").value=["【音樂會錄影詢價】","演出單位："+(v("f-org")||"（未填）"),"編制："+$("f-type").value,"演出日期："+(v("f-date")||"（未填）"),"場地："+(v("f-venue")||"（未填）"),"地區："+a.dataset.name,"",detail,"","試算總價："+tt,"備註："+(v("f-note")||"無")].join("\n");
     const q=new URLSearchParams({q5_textbox3:v("f-org"),q6_textbox4:$("f-type").value,q7_textbox5:v("f-date"),q8_textbox6:[a.dataset.name,v("f-venue")].filter(Boolean).join("　"),q9_textarea7:detail,q10_textbox8:tt,q11_textarea9:v("f-note")});
-    $("send").href=$("send2").href=FORM+"?"+q.toString();
+    $("send").href=$("send2").href=FORM+"?"+q.toString().replace(/\+/g,"%20");
   }
   form.addEventListener("input",update);form.addEventListener("change",update);
   form.addEventListener("submit",e=>e.preventDefault());
