@@ -1,13 +1,16 @@
 <!doctype html>
-<html lang="zh-Hant-TW">
+<html lang="zh-Hant">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="鹹豆漿藝術工作室：由職業指揮主持的音樂會錄影、現場收音與後期混音，服務台中以北。">
+<meta name="description" content="鹹豆漿藝術工作室：音樂會多機位錄影、現場收音與後期混音，服務台中以北。線上選配即時試算。">
 <title>鹹豆漿藝術工作室</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Noto+Serif+TC:wght@300;400;500&family=Noto+Sans+TC:wght@300;400;500&display=swap">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
 <style>
 /* Single committed look: monochrome, alternating white and black grounds. */
 :root{
@@ -240,6 +243,69 @@ section.block{padding-block:clamp(72px,11vw,140px)}
 .mailto{font-family:var(--latin);font-size:18px;letter-spacing:.06em;user-select:all}
 .draft{margin-top:12px;width:100%;min-height:200px;font:13px/1.8 var(--sans);font-weight:300;border:1px solid var(--hair);background:var(--paper);padding:18px;color:var(--ink);resize:vertical}
 
+.hero .from{font-size:13px;letter-spacing:.2em;color:var(--grey-2);margin-top:4px}
+.hero .from b{font-family:var(--latin);font-weight:400;font-size:18px;letter-spacing:.06em;color:#F2F2EF;font-variant-numeric:lining-nums}
+.tier .why{font-size:14px;line-height:1.8;color:var(--grey);padding-top:4px}
+.tier.signature .why{color:var(--grey-2)}
+.terms{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--hair)}
+.term{padding:28px 24px 28px 0;display:grid;gap:8px;align-content:start;border-bottom:1px solid var(--hair);min-width:0}
+.term b{font-family:var(--serif);font-weight:400;font-size:17px;letter-spacing:.08em}
+.term p{font-size:14px;color:var(--grey)}
+@media (max-width:860px){.terms{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.terms{grid-template-columns:1fr}}
+.only{text-align:center;display:grid;gap:22px;justify-items:center}
+.only h2{font-size:clamp(24px,3.2vw,36px);line-height:1.6}
+.only p{color:var(--grey-2);max-width:34em}
+.partners{border-top:1px solid var(--hair)}
+.partners div{display:grid;grid-template-columns:10em 1fr;gap:16px;padding-block:20px;border-bottom:1px solid var(--hair);align-items:baseline}
+.partners b{font-family:var(--serif);font-weight:400;letter-spacing:.1em}
+@media (max-width:520px){.partners div{grid-template-columns:1fr;gap:4px}}
+.portrait .ph{position:absolute;top:24px;left:24px;right:24px;font-size:12.5px;line-height:1.8;letter-spacing:.06em;color:var(--grey-2)}
+.tiers.four{grid-template-columns:repeat(4,1fr)}
+@media (max-width:1100px){.tiers.four{grid-template-columns:1fr 1fr}.tiers.four .tier:nth-child(3){border-left:0}.tiers.four .tier:nth-child(n+3){border-top:1px solid var(--hair)}}
+@media (max-width:640px){.tiers.four{grid-template-columns:1fr}.tiers.four .tier{border-left:0;border-top:1px solid var(--hair)}.tiers.four .tier:first-child{border-top:0}}
+.tiers.four .price{font-size:40px}
+.plist{border-top:1px solid var(--hair);margin-top:clamp(56px,8vw,96px)}
+.plist h4{font-family:var(--latin);font-weight:400;font-size:13px;letter-spacing:.3em;text-transform:uppercase;color:var(--grey);margin:0;padding-block:28px 10px}
+.prow{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 24px;padding-block:16px;border-bottom:1px solid var(--hair);align-items:baseline}
+.prow b{font-family:var(--serif);font-weight:400;letter-spacing:.06em}
+.prow .pp{font-family:var(--latin);font-size:20px;font-variant-numeric:lining-nums tabular-nums;white-space:nowrap}
+.prow .pp small{font-family:var(--sans);font-size:12px;color:var(--grey);margin-left:4px}
+.prow p{grid-column:1/-1;font-size:14px;color:var(--grey)}
+.step-no{font-family:var(--latin);font-size:13px;letter-spacing:.3em;color:var(--champagne);display:block;margin-bottom:6px}
+.config h3.big{font-family:var(--serif);font-weight:300;font-size:clamp(22px,3vw,30px);letter-spacing:.06em;color:var(--ink);margin-bottom:8px}
+.config .hint{font-size:14px;color:var(--grey);margin-bottom:20px;max-width:44em}
+.choices.four{grid-template-columns:repeat(4,1fr)}
+@media (max-width:1000px){.choices.four{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.choices.four{grid-template-columns:1fr}}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:700px){.opts{grid-template-columns:1fr}}
+.opt{position:relative;border:1px solid var(--hair);padding:18px 22px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 16px;align-items:center;cursor:pointer;transition:border-color .3s,opacity .3s}
+.opt:hover{border-color:var(--grey-2)}
+.opt input[type=checkbox],.opt input[type=radio]{position:absolute;opacity:0;pointer-events:none}
+.opt:has(input:checked),.opt.on{border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+.opt:has(input:focus-visible){outline:1px solid var(--champagne);outline-offset:4px}
+.opt b{font-family:var(--serif);font-weight:400;font-size:17px;letter-spacing:.08em}
+.opt .p{font-family:var(--latin);font-size:18px;font-variant-numeric:lining-nums tabular-nums;white-space:nowrap}
+.opt .d{grid-column:1/-1;font-size:13.5px;color:var(--grey)}
+.opt.off{opacity:.38;pointer-events:none}
+.opt.qty{cursor:default}
+.stepper{grid-column:1/-1;display:flex;align-items:center;gap:14px;margin-top:6px}
+.stepper button{width:36px;height:36px;border:1px solid var(--hair);background:none;cursor:pointer;font-family:var(--latin);font-size:20px;line-height:1}
+.stepper button:hover{border-color:var(--ink)}
+.stepper output{font-family:var(--latin);font-size:20px;min-width:1.5em;text-align:center;font-variant-numeric:lining-nums tabular-nums}
+.stepper span{font-size:12.5px;color:var(--grey)}
+.summary{border:1px solid var(--hair);background:var(--paper);padding:clamp(24px,4vw,40px);display:grid;gap:6px}
+.summary .line{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;padding-block:9px;border-bottom:1px solid var(--hair);font-size:15px}
+.summary .line span:last-child{font-family:var(--latin);font-size:18px;font-variant-numeric:lining-nums tabular-nums;white-space:nowrap}
+.summary .line.neg span:last-child{color:var(--champagne)}
+.summary .grand{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding-top:18px}
+.summary .grand b{font-family:var(--latin);font-weight:300;font-size:clamp(34px,5vw,48px);line-height:1;font-variant-numeric:lining-nums tabular-nums}
+.summary .note{font-size:12.5px;color:var(--grey);margin-top:10px}
+.send{display:grid;gap:16px;justify-items:start;margin-top:28px}
+.send p{font-size:14px;color:var(--grey);max-width:44em}
+.send .alt{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.totalbar a.btn-solid{background:#fff;color:#0A0A0A;border-color:#fff}
 footer.site{background:var(--black);color:var(--grey-2);padding-block:72px 48px;font-size:13px;border-top:1px solid var(--hair-dark)}
 footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px}
 footer .brand{display:grid;gap:6px}
@@ -252,17 +318,13 @@ footer a:hover{color:#F2F2EF}
 footer .legal{margin-top:56px;padding-top:24px;border-top:1px solid var(--hair-dark);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12px;letter-spacing:.1em}
 @media (max-width:760px){footer .cols{grid-template-columns:1fr}}
 </style>
-<style>html,body{margin:0}img{max-width:100%}</style>
-</head>
-<body>
-
 
 <header class="site">
   <div class="gutter">
     <div class="inner bar">
       <div class="side left"><button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">選單</button><span class="txt">台中以北　音樂會錄影・錄音</span></div>
-      <a class="wordmark" href="#home" data-go="home"><span class="zh">鹹豆漿藝術</span><span class="en">Xian Dou Jiang · Art Studio</span></a>
-      <div class="side right"><a href="#contact" data-go="contact">預約詢價</a></div>
+      <a class="wordmark" href="#home" data-go="home"><span class="zh">鹹豆漿藝術</span><span class="en">Saltysoymilk Art</span></a>
+      <div class="side right"><a href="#contact" data-go="contact">選配詢價</a></div>
     </div>
     <nav class="primary" id="nav" aria-label="主選單">
       <a href="#home" data-go="home">首頁</a>
@@ -270,7 +332,7 @@ footer .legal{margin-top:56px;padding-top:24px;border-top:1px solid var(--hair-d
       <a href="#works" data-go="works">作品</a>
       <a href="#about" data-go="about">關於</a>
       <a href="#faq" data-go="faq">常見問題</a>
-      <a href="#contact" data-go="contact">預約詢價</a>
+      <a href="#contact" data-go="contact">選配詢價</a>
     </nav>
   </div>
 </header>
@@ -283,11 +345,12 @@ footer .legal{margin-top:56px;padding-top:24px;border-top:1px solid var(--hair-d
     <div class="content">
       <p class="kicker">Concert Film &amp; Live Recording</p>
       <h1>為每一場音樂會<br>留下值得重看的版本</h1>
-      <p class="lede">多機位音樂會錄影、現場收音與後期混音。由職業指揮主持，從總譜開始規劃每一個鏡頭與每一支麥克風。</p>
+      <p class="lede">多機位錄影、現場收音與後期混音，由職業指揮帶隊，從總譜開始規劃每一個鏡頭與每一支麥克風。</p>
       <div class="ctas">
         <a class="link-line" href="#services" data-go="services">探索服務方案</a>
-        <a class="link-line" href="#contact" data-go="contact">預約詢價</a>
+        <a class="link-line" href="#contact" data-go="contact">詢問檔期</a>
       </div>
+      <p class="from">雙機位 <b>NT$ 15,000</b> 起／場　・　服務台中以北</p>
     </div>
   </div>
 
@@ -296,6 +359,7 @@ footer .legal{margin-top:56px;padding-top:24px;border-top:1px solid var(--hair-d
       <p class="kicker" style="margin-bottom:28px">Our Approach</p>
       <h2>鏡頭跟著樂句走。<br><span>麥克風，擺在指揮聽見的位置。</span></h2>
       <p>多數音樂會錄影由攝影師主導。我們反過來，先讀曲目，再決定哪一小節屬於哪一個聲部、哪一個位置聽得見整個樂團的平衡。</p>
+      <p><a class="link-line" href="#about" data-go="about">指揮為什麼跑來拍音樂會</a></p>
     </div>
   </section>
 
@@ -322,7 +386,7 @@ footer .legal{margin-top:56px;padding-top:24px;border-top:1px solid var(--hair-d
     <div class="inner cta-band">
       <p class="kicker">Reservation</p>
       <h2>為下一場演出預留檔期</h2>
-      <a class="btn-solid" href="#contact" data-go="contact">開始詢價</a>
+      <a class="btn-solid" href="#contact" data-go="contact">詢問檔期</a>
     </div>
   </section>
 </div>
@@ -335,60 +399,111 @@ footer .legal{margin-top:56px;padding-top:24px;border-top:1px solid var(--hair-d
         <p class="kicker">Services</p>
         <h2>服務方案</h2>
         <hr class="rule">
-        <p class="sub">三個方案皆含演出當日出機、多機剪輯與後期混音。正片規格 4K 30p。</p>
+        <p class="sub">以每場計價，不以鐘點計。套裝方案皆含演出當日出機、立體聲收音、多機剪輯與混音，正片規格 4K 30p，演出後 7 日內交初稿。</p>
       </div>
-      <div class="tiers">
+      <div class="tiers four">
         <article class="tier">
           <p class="tname">Essential</p>
           <h3>基本方案</h3>
-          <p class="for">獨奏會・室內樂・小型合唱</p>
-          <p class="price"><span class="cur">NT$</span>12,000<span class="per">／場</span></p>
+          <p class="for">獨奏會・室內樂</p>
+          <p class="price"><span class="cur">NT$</span>15,000<span class="per">／場</span></p>
           <ul>
-            <li><span>機位</span><span>雙機位</span></li>
-            <li><span>鏡頭</span><span>全景・特寫</span></li>
+            <li><span>機位</span><span>4K 雙機位</span></li>
+            <li><span>鏡頭</span><span>定鏡全景・運鏡特寫</span></li>
             <li><span>收音</span><span>立體聲主麥</span></li>
-            <li><span>後期</span><span>剪輯・混音</span></li>
-            <li><span>出機人員</span><span>1 位</span></li>
+            <li><span>後期</span><span>多機剪輯・混音</span></li>
+            <li><span>出機人員</span><span>攝影 1 位</span></li>
           </ul>
-          <a class="link-line go" href="#contact" data-go="contact" data-plan="basic">選擇此方案</a>
+          <p class="why">兩台攝影機，一台看全場、一台看演奏者的手與表情。編制小的演出，這樣就能拍得完整。</p>
+          <a class="link-line go" href="#contact" data-go="contact" data-plan="basic">開始選配</a>
         </article>
         <article class="tier signature">
           <p class="tname">Signature</p>
           <h3>標準方案</h3>
-          <p class="for">管弦樂團・國樂團・學校音樂會</p>
-          <p class="price"><span class="cur">NT$</span>18,000<span class="per">／場</span></p>
+          <p class="for">國樂團・管樂團・合唱團</p>
+          <p class="price"><span class="cur">NT$</span>20,000<span class="per">／場</span></p>
           <ul>
-            <li><span>機位</span><span>三機位</span></li>
-            <li><span>鏡頭</span><span>全景・中景・特寫搖攝</span></li>
-            <li><span>收音</span><span>立體聲主麥＋同步備份</span></li>
-            <li><span>後期</span><span>依總譜切鏡・混音</span></li>
-            <li><span>出機人員</span><span>2 位</span></li>
+            <li><span>機位</span><span>4K 三機位</span></li>
+            <li><span>鏡頭</span><span>全景・運鏡特寫・指揮</span></li>
+            <li><span>收音</span><span>立體聲主麥</span></li>
+            <li><span>後期</span><span>多機剪輯・混音</span></li>
+            <li><span>出機人員</span><span>攝影 2 位</span></li>
           </ul>
-          <a class="link-line go" href="#contact" data-go="contact" data-plan="std">選擇此方案</a>
+          <p class="why">樂團的聲部多，兩台攝影機來不及換。第三台固定看指揮，獨奏與聲部齊奏交給運鏡機。</p>
+          <a class="link-line go" href="#contact" data-go="contact" data-plan="std">開始選配</a>
         </article>
         <article class="tier">
           <p class="tname">Grand</p>
           <h3>旗艦方案</h3>
-          <p class="for">大型編制・協奏曲・獨奏與獨唱</p>
-          <p class="price"><span class="cur">NT$</span>25,000<span class="per">／場</span></p>
+          <p class="for">管弦樂團・協奏曲・大型合唱</p>
+          <p class="price"><span class="cur">NT$</span>32,000<span class="per">／場</span></p>
           <ul>
-            <li><span>機位</span><span>四機位</span></li>
-            <li><span>鏡頭</span><span>依曲目規劃</span></li>
-            <li><span>收音</span><span>主麥＋點麥多軌</span></li>
-            <li><span>後期</span><span>分軌混音</span></li>
-            <li><span>出機人員</span><span>3 位</span></li>
+            <li><span>機位</span><span>4K 四機位</span></li>
+            <li><span>鏡頭</span><span>全景・雙運鏡特寫・指揮</span></li>
+            <li><span>收音</span><span>主麥＋聲部點麥多軌</span></li>
+            <li><span>後期</span><span>多機剪輯・多軌混音</span></li>
+            <li><span>出機人員</span><span>攝影 2 位・錄音師 1 位</span></li>
           </ul>
-          <a class="link-line go" href="#contact" data-go="contact" data-plan="flag">選擇此方案</a>
+          <p class="why">協奏曲的獨奏者、合唱的獨唱，需要自己的鏡頭和自己的麥克風。需先確認錄音師檔期。</p>
+          <a class="link-line go" href="#contact" data-go="contact" data-plan="flag">開始選配</a>
+        </article>
+        <article class="tier">
+          <p class="tname">Audition</p>
+          <h3>甄選・比賽錄影</h3>
+          <p class="for">甄選影片・比賽投件</p>
+          <p class="price"><span class="cur">NT$</span>6,000<span class="per">／次</span></p>
+          <ul>
+            <li><span>機位</span><span>4K 單機定鏡</span></li>
+            <li><span>收音</span><span>立體聲</span></li>
+            <li><span>時數</span><span>2 小時，自試音起算</span></li>
+            <li><span>後期</span><span>一鏡到底，不剪接</span></li>
+            <li><span>交件</span><span>3 日內</span></li>
+          </ul>
+          <p class="why">甄選與比賽多半規定不得剪接。可以重錄，挑最好的一次交件。</p>
+          <a class="link-line go" href="#contact" data-go="contact" data-plan="aud">開始選配</a>
         </article>
       </div>
 
-      <div class="addons">
-        <div class="addon"><h4>4K 60p</h4><span class="ap">+ 4,000</span><p>每秒畫格加倍。打擊樂、弓法與舞台動線更流暢。</p></div>
-        <div class="addon"><h4>社群短片</h4><span class="ap">洽詢</span><p>直式剪輯，供 Instagram、Facebook 宣傳。</p></div>
-        <div class="addon"><h4>單曲切片</h4><span class="ap">洽詢</span><p>整場依曲目拆為獨立影片。</p></div>
-        <div class="addon"><h4>原始素材・急件</h4><span class="ap">洽詢</span><p>各機位原始檔案、縮短交件時程。</p></div>
+      <div class="plist">
+        <h4>校園優惠</h4>
+        <div class="prow"><b>基本・標準方案</b><span class="pp">− 2,000</span><p>學生自治社團、學生個人或聯合獨奏會，且為學生自籌經費。學校公費、音樂班與校方委託依標準價。</p></div>
+        <div class="prow"><b>旗艦方案</b><span class="pp">− 4,000</span><p>資格同上。報價單會同時列出原價與折抵。</p></div>
+        <h4>現場加購</h4>
+        <div class="prow"><b>追加運鏡特寫機位</b><span class="pp">7,000<small>／機</small></span><p>加攝影師 1 位與 4K 機位 1 台，含該機位剪輯。須於演出前 14 日確認。</p></div>
+        <div class="prow"><b>追加固定機位</b><span class="pp">4,000<small>／機</small></span><p>4K 定鏡機位 1 台，不加人。例如協奏者定點、打擊聲部、舞台側面。</p></div>
+        <div class="prow"><b>總譜導播</b><span class="pp">9,000<small>／場</small></span><p>由具指揮專業者讀譜，即時調度機位，演出前提供分鏡表。建議四機位以上加購。</p></div>
+        <div class="prow"><b>多軌錄音升級</b><span class="pp">8,000<small>／場</small></span><p>加錄音師 1 位，主麥＋點麥多軌收音與多軌混音。基本、標準方案適用，旗艦方案已含。</p></div>
+        <div class="prow"><b>4K 60p 升級</b><span class="pp">4,000<small>／場</small></span><p>全機位改以 4K 60p 拍攝與交付，檔案量約為 30p 的兩倍。</p></div>
+        <div class="prow"><b>演出超時</b><span class="pp">1,500<small>／30 分鐘</small></span><p>每場含中場 2.5 小時，超過後每 30 分鐘計，未滿以 30 分鐘計。</p></div>
+        <h4>後製加購</h4>
+        <div class="prow"><b>曲目分檔</b><span class="pp">2,000<small>／場</small></span><p>全場依曲目或樂章分段輸出，附完整曲名、作品號與速度標記，方便投件或上傳。</p></div>
+        <div class="prow"><b>社群短影音 Reels</b><span class="pp">3,000<small>／支</small></span><p>60 秒內 9:16 直式短片，含動態樂曲標題。</p></div>
+        <div class="prow"><b>純音檔交付</b><span class="pp">1,000<small>／場</small></span><p>全場混音音檔 WAV 24bit／48kHz 與 MP3。</p></div>
+        <div class="prow"><b>追加修改</b><span class="pp">2,000<small>／次</small></span><p>第 3 次起的修改：剪接點、字卡、音量平衡。重新混音或重剪另行報價。</p></div>
+        <div class="prow"><b>原始拍攝素材＋1TB 外接硬碟</b><span class="pp">8,500<small>／組</small></span><p>全數 4K 拍攝原始檔，存入外接硬碟一顆。</p></div>
+        <div class="prow"><b>隨身碟交件</b><span class="pp">500<small>／份</small></span><p>成片存入隨身碟郵寄。預設為雲端連結交付，保存 90 天。</p></div>
+        <div class="prow"><b>急件</b><span class="pp">＋30%</span><p>演出後 3 日內交件，依總價加收，須先確認剪輯人力。</p></div>
+        <h4>車馬費</h4>
+        <div class="prow"><b>雙北</b><span class="pp">免費</span></div>
+        <div class="prow"><b>桃園</b><span class="pp">1,500<small>／場</small></span></div>
+        <div class="prow"><b>新竹</b><span class="pp">2,500<small>／場</small></span></div>
+        <div class="prow"><b>苗栗・台中</b><span class="pp">4,000<small>／場</small></span><p>台中以南暫不承接。</p></div>
+        <h4>指揮專業加值</h4>
+        <div class="prow"><b>樂曲解說撰寫</b><span class="pp">12,000<small>／式</small></span><p>依演出曲目撰寫樂曲解說與作曲家脈絡，供節目冊使用。由負責人親自執行，每月名額有限。</p></div>
+        <div class="prow"><b>彩排聲響平衡與廳堂聲學指導</b><span class="pp">10,000<small>／天</small></span><p>彩排時段給予織度、強弱與座位擺位建議。由負責人親自執行，每月名額有限。</p></div>
       </div>
-      <p class="fine">價格以每場計，服務區域台中以北。實際報價依場地、節目長度與交件需求確認。</p>
+      <p style="text-align:center;margin-top:56px"><a class="btn-solid" href="#contact" data-go="contact">線上選配試算</a></p>
+      <p class="fine">價格為新台幣，不另加營業稅，開立收據。實際報價依場地、節目長度與交件需求確認。</p>
+
+      <div class="head" style="margin-top:clamp(72px,10vw,120px)"><p class="kicker">Terms</p><h2>合作條款</h2><hr class="rule"><p class="sub">報價前先講清楚，之後就不必猜。</p></div>
+      <div class="terms">
+        <div class="term"><b>付款</b><p>確認委託時支付訂金 30%，尾款於成片交付後 7 日內結清。</p></div>
+        <div class="term"><b>取消與延期</b><p>演出前 14 天內取消，訂金不退。延期請儘早告知，我們會盡量協調檔期。</p></div>
+        <div class="term"><b>交件</b><p>整場成片 1 支（4K 30p MP4）與曲目字卡，演出後 7 日內交初稿。雲端連結交付，保存 90 天。</p></div>
+        <div class="term"><b>修改</b><p>初稿後含 2 次修改，第 3 次起每次 2,000。</p></div>
+        <div class="term"><b>授權與肖像</b><p>影片若要公開上傳，曲目授權與演出者肖像同意由主辦單位取得。公版曲目同樣需要演出者的書面同意。</p></div>
+        <div class="term"><b>學校與社團</b><p>可開立收據並配合學校請款與核銷流程。學生自籌經費的社團與獨奏會適用校園優惠。</p></div>
+      </div>
     </div>
   </section>
 
@@ -396,7 +511,7 @@ footer .legal{margin-top:56px;padding-top:24px;border-top:1px solid var(--hair-d
     <div class="inner">
       <div class="head"><p class="kicker">Process</p><h2>合作流程</h2><hr class="rule"></div>
       <ol class="steps">
-        <li><span class="sn">1</span><b>詢價</b><p>提供日期、場地與編制，線上即可試算。</p></li>
+        <li><span class="sn">1</span><b>選配</b><p>線上選方案與加購，總價即時試算，送出詢價。</p></li>
         <li><span class="sn">2</span><b>確認報價</b><p>確認方案、加購項目與交件時程。</p></li>
         <li><span class="sn">3</span><b>研讀曲目</b><p>索取節目單或總譜，規劃機位與麥克風。</p></li>
         <li><span class="sn">4</span><b>演出當日</b><p>提前進場架設與試音，全程錄製。</p></li>
@@ -404,13 +519,31 @@ footer .legal{margin-top:56px;padding-top:24px;border-top:1px solid var(--hair-d
       </ol>
     </div>
   </section>
+
+  <section class="block gutter paper">
+    <div class="inner mic">
+      <div class="txt">
+        <p class="kicker">Why Separate Audio</p>
+        <h3>收音為什麼另外架</h3>
+        <p>攝影機站在觀眾席後方，那裡聽到的是殘響和咳嗽聲。樂團的聲音在指揮頭頂上方才是平衡的。</p>
+        <p>所以每一場我們都另外架一對立體聲麥克風，由獨立的錄音機收錄，後期再與畫面對齊混音。</p>
+      </div>
+      <div class="txt">
+        <p class="kicker">Why Per Concert</p>
+        <h3>為什麼以場計價</h3>
+        <p>進場架設、試音與彩排都是成品的一部分。以鐘點計價，最先被省掉的就是這些。</p>
+        <p>每場含中場以 2.5 小時為準，超過後每 30 分鐘 1,500。</p>
+      </div>
+    </div>
+  </section>
+
 </div>
 
 <!-- ================= WORKS ================= -->
 <div class="view" id="v-works" data-view="works">
   <section class="block gutter">
     <div class="inner">
-      <div class="head"><p class="kicker">Selected Works</p><h2>作品</h2><hr class="rule"></div>
+      <div class="head"><p class="kicker">Selected Works</p><h2>台前，幕後</h2><hr class="rule"><p class="sub">作品陸續上架中。沒有的先留白，不拿別人的畫面充數。</p></div>
       <div class="cats" aria-hidden="true"><span>全部</span><span>管弦</span><span>國樂</span><span>合唱</span><span>獨奏</span><span>跨界</span></div>
       <div class="gallery">
         <figure class="frame wide" style="margin:0">
@@ -464,14 +597,28 @@ footer .legal{margin-top:56px;padding-top:24px;border-top:1px solid var(--hair-d
           <path d="M120 330 C170 250 220 230 300 150" fill="none" stroke="#A88B5C" stroke-width="1.2" stroke-linecap="round"/>
           <circle cx="300" cy="150" r="2.5" fill="#A88B5C"/>
         </svg>
+        <p class="ph">（待補）負責人照片<br>本人平常背對觀眾，正面照不多，拍到好的再補上。</p>
         <div class="nm"><b>朱哲民</b><span>Founder · Conductor</span></div>
       </div>
       <div class="txt">
         <p class="kicker">About</p>
-        <h2>由指揮主持的<br>音樂會錄影工作室</h2>
-        <p>鹹豆漿藝術工作室由職業指揮朱哲民成立。長年站在樂團前面，知道一場演出的聲音從哪裡來、觀眾的視線會落在哪裡。我們把這份理解帶進錄影與錄音。</p>
+        <h2>指揮跑來拍音樂會</h2>
+        <p>朱哲民是職業指揮，平常的工作是站在樂團前面，背對觀眾。站久了會知道一場演出的聲音從哪裡來，下一個樂句該看誰。</p>
+        <p>音樂會錄影最常被嫌的三件事是太貴、聲音不好、畫面沒拍到重點。後兩件剛好是指揮每天在處理的事，於是有了這間工作室。</p>
         <p>朱哲民同時是客家跨界樂團 FALABIBO 的創團團長，並擔任嗩吶演奏。工作室由攝影與後期夥伴共同組成，服務範圍台中以北。</p>
         <a class="link-line" href="#contact" data-go="contact" style="justify-self:start">與我們聯繫</a>
+      </div>
+    </div>
+  </section>
+  <section class="block gutter">
+    <div class="narrow">
+      <div class="head"><p class="kicker">Collaborations</p><h2>合作對象</h2><hr class="rule"></div>
+      <div class="partners">
+        <div><b>跨界樂團</b><span>FALABIBO（負責人自己的團）</span></div>
+        <div><b>管弦樂團</b><span class="tbd">（待補）</span></div>
+        <div><b>國樂團</b><span class="tbd">（待補）</span></div>
+        <div><b>學校音樂班與社團</b><span class="tbd">（待補）</span></div>
+        <div><b>合唱團</b><span class="tbd">（待補）</span></div>
       </div>
     </div>
   </section>
@@ -509,7 +656,9 @@ footer .legal{margin-top:56px;padding-top:24px;border-top:1px solid var(--hair-d
         <details><summary>需要提供哪些資料？</summary><p>演出日期、場地、編制人數與節目單。若能提供總譜或分譜，我們會依曲目規劃鏡頭。</p></details>
         <details><summary>4K 30p 與 4K 60p 有何不同？</summary><p>60p 每秒畫格數是 30p 的兩倍，快速動作更流暢。一般音樂會 30p 已相當足夠，60p 為加購項目。</p></details>
         <details><summary>如果器材在演出中出狀況？</summary><p>每場皆有攝影機同步錄製的備份音軌，特寫機亦以雙卡同時寫入，降低單一器材失誤的風險。</p></details>
-        <details><summary>交件需要多久？</summary><p>依節目長度與加購內容而定，於報價時確認。如有時程需求可加購急件。</p></details>
+        <details><summary>交件需要多久？</summary><p>演出後 7 日內交初稿，含 2 次修改。需要更快可加購急件，3 日內交件。</p></details>
+        <details><summary>學校可以請款核銷嗎？</summary><p>可以。我們開立收據，並配合學校的請款單與核銷時程。統一編號 61296542。</p></details>
+        <details><summary>影片可以放上 YouTube 嗎？</summary><p>可以，但公開上傳需要曲目授權與演出者的肖像同意，這部分由主辦單位取得。我們會在報價時提醒需要準備的文件。</p></details>
       </div>
     </div>
   </section>
@@ -519,49 +668,100 @@ footer .legal{margin-top:56px;padding-top:24px;border-top:1px solid var(--hair-d
 <div class="view" id="v-contact" data-view="contact">
   <section class="block gutter">
     <div class="inner">
-      <div class="head"><p class="kicker">Reservation</p><h2>預約詢價</h2><hr class="rule"><p class="sub">選擇方案與加購，總價即時試算。完成後複製內容寄至工作室信箱，我們將回覆正式報價。</p></div>
+      <div class="head"><p class="kicker">Build Your Recording</p><h2>選配你的音樂會錄影</h2><hr class="rule"><p class="sub">一步一步選，總價即時更新。選完按送出詢價，我們會在兩個工作天內回覆正式報價。</p></div>
       <form class="config" id="qform">
         <div>
-          <h3>一・選擇方案</h3>
-          <div class="choices">
-            <label class="choice"><input type="radio" name="plan" id="p-basic" value="basic"><b>基本方案</b><span class="d">雙機位・立體聲主麥</span><span class="p">NT$ 12,000</span></label>
-            <label class="choice"><input type="radio" name="plan" id="p-std" value="std" checked><b>標準方案</b><span class="d">三機位・立體聲主麥</span><span class="p">NT$ 18,000</span></label>
-            <label class="choice"><input type="radio" name="plan" id="p-flag" value="flag"><b>旗艦方案</b><span class="d">四機位・多軌收音</span><span class="p">NT$ 25,000</span></label>
+          <span class="step-no">01</span><h3 class="big">選擇方案</h3>
+          <p class="hint">依編制大小選。不確定的話先選標準方案，我們回覆時會再建議。</p>
+          <div class="choices four">
+            <label class="choice"><input type="radio" name="plan" id="p-basic" value="basic"><b>基本方案</b><span class="d">雙機位・立體聲・攝影 1 位</span><span class="p">NT$ 15,000</span></label>
+            <label class="choice"><input type="radio" name="plan" id="p-std" value="std" checked><b>標準方案</b><span class="d">三機位・立體聲・攝影 2 位</span><span class="p">NT$ 20,000</span></label>
+            <label class="choice"><input type="radio" name="plan" id="p-flag" value="flag"><b>旗艦方案</b><span class="d">四機位・多軌錄音・3 位</span><span class="p">NT$ 32,000</span></label>
+            <label class="choice"><input type="radio" name="plan" id="p-aud" value="aud"><b>甄選・比賽錄影</b><span class="d">單機定鏡・2 小時・不剪接</span><span class="p">NT$ 6,000</span></label>
           </div>
         </div>
         <div>
-          <h3>二・加購項目</h3>
-          <div class="extras">
-            <label class="choice"><input type="checkbox" id="a-60p" data-price="4000" data-name="4K 60p"><b>4K 60p</b><span class="p">+ 4,000</span></label>
-            <label class="choice"><input type="checkbox" id="a-reels" data-price="0" data-name="社群短片"><b>社群短片</b><span class="p">洽詢</span></label>
-            <label class="choice"><input type="checkbox" id="a-clip" data-price="0" data-name="單曲切片"><b>單曲切片</b><span class="p">洽詢</span></label>
-            <label class="choice"><input type="checkbox" id="a-raw" data-price="0" data-name="原始素材・急件"><b>原始素材・急件</b><span class="p">洽詢</span></label>
+          <span class="step-no">02</span><h3 class="big">現場加購</h3>
+          <p class="hint">多一個機位、多一位錄音師，或請指揮讀譜導播。</p>
+          <div class="opts">
+            <div class="opt qty" data-id="S01" data-price="7000" data-name="追加運鏡特寫機位" data-unit="機" data-max="2" data-noaud="1"><b>追加運鏡特寫機位</b><span class="p">7,000／機</span><span class="d">加攝影師 1 位，含該機位剪輯</span><div class="stepper"><button type="button" data-d="-1" aria-label="減少">−</button><output id="q-S01">0</output><button type="button" data-d="1" aria-label="增加">+</button></div></div>
+            <div class="opt qty" data-id="S02" data-price="4000" data-name="追加固定機位" data-unit="機" data-max="2" data-noaud="1"><b>追加固定機位</b><span class="p">4,000／機</span><span class="d">定鏡，不加人。協奏者定點、打擊聲部、舞台側面</span><div class="stepper"><button type="button" data-d="-1" aria-label="減少">−</button><output id="q-S02">0</output><button type="button" data-d="1" aria-label="增加">+</button></div></div>
+            <label class="opt" data-noaud="1"><input type="checkbox" id="a-S03" data-price="9000" data-name="總譜導播"><b>總譜導播</b><span class="p">9,000</span><span class="d">指揮讀譜即時調度機位，建議四機位以上</span></label>
+            <label class="opt" data-noaud="1" data-noflag="1"><input type="checkbox" id="a-S04" data-price="8000" data-name="多軌錄音升級"><b>多軌錄音升級</b><span class="p">8,000</span><span class="d" id="d-S04">加錄音師 1 位，主麥＋點麥多軌</span></label>
+            <label class="opt"><input type="checkbox" id="a-S05" data-price="4000" data-name="4K 60p 升級"><b>4K 60p 升級</b><span class="p">4,000</span><span class="d">全機位 60p 拍攝與交付</span></label>
+            <div class="opt qty" data-id="S06" data-price="1500" data-name="演出超時" data-unit="個 30 分鐘" data-max="6"><b>演出超時</b><span class="p">1,500／30 分鐘</span><span class="d">超過 2.5 小時（含中場）才需要</span><div class="stepper"><button type="button" data-d="-1" aria-label="減少">−</button><output id="q-S06">0</output><button type="button" data-d="1" aria-label="增加">+</button><span>× 30 分鐘</span></div></div>
           </div>
         </div>
         <div>
-          <h3>三・演出資訊</h3>
+          <span class="step-no">03</span><h3 class="big">後製加購</h3>
+          <p class="hint">成片之外還需要什麼。</p>
+          <div class="opts">
+            <label class="opt" data-noaud="1"><input type="checkbox" id="a-E01" data-price="2000" data-name="曲目分檔"><b>曲目分檔</b><span class="p">2,000</span><span class="d">依曲目或樂章分段輸出，附曲名與作品號</span></label>
+            <div class="opt qty" data-id="E02" data-price="3000" data-name="社群短影音 Reels" data-unit="支" data-max="5" data-noaud="1"><b>社群短影音 Reels</b><span class="p">3,000／支</span><span class="d">60 秒內直式短片</span><div class="stepper"><button type="button" data-d="-1" aria-label="減少">−</button><output id="q-E02">0</output><button type="button" data-d="1" aria-label="增加">+</button><span>支</span></div></div>
+            <label class="opt"><input type="checkbox" id="a-E03" data-price="1000" data-name="純音檔交付"><b>純音檔交付</b><span class="p">1,000</span><span class="d">WAV 24bit／48kHz 與 MP3</span></label>
+            <label class="opt"><input type="checkbox" id="a-E05" data-price="8500" data-name="原始拍攝素材＋1TB 硬碟"><b>原始素材＋1TB 硬碟</b><span class="p">8,500</span><span class="d">全數 4K 原始檔</span></label>
+            <label class="opt"><input type="checkbox" id="a-E06" data-price="500" data-name="隨身碟交件"><b>隨身碟交件</b><span class="p">500</span><span class="d">預設為雲端連結，保存 90 天</span></label>
+            <label class="opt" data-noaud="1"><input type="checkbox" id="a-rush"><b>急件</b><span class="p">＋30%</span><span class="d">演出後 3 日內交件，依總價加收</span></label>
+          </div>
+        </div>
+        <div>
+          <span class="step-no">04</span><h3 class="big">演出地點</h3>
+          <p class="hint">雙北免車馬費。台中以南暫不承接。</p>
+          <div class="choices four">
+            <label class="choice"><input type="radio" name="area" id="t-0" value="0" data-name="雙北" checked><b>雙北</b><span class="p">免費</span></label>
+            <label class="choice"><input type="radio" name="area" id="t-1" value="1500" data-name="桃園"><b>桃園</b><span class="p">+ 1,500</span></label>
+            <label class="choice"><input type="radio" name="area" id="t-2" value="2500" data-name="新竹"><b>新竹</b><span class="p">+ 2,500</span></label>
+            <label class="choice"><input type="radio" name="area" id="t-3" value="4000" data-name="苗栗・台中"><b>苗栗・台中</b><span class="p">+ 4,000</span></label>
+          </div>
+        </div>
+        <div>
+          <span class="step-no">05</span><h3 class="big">指揮專業加值</h3>
+          <p class="hint">由負責人朱哲民親自執行，每月名額有限，須先確認檔期。</p>
+          <div class="opts">
+            <label class="opt"><input type="checkbox" id="a-M01" data-price="12000" data-name="樂曲解說撰寫"><b>樂曲解說撰寫</b><span class="p">12,000</span><span class="d">供節目冊使用的樂曲解說與作曲家脈絡</span></label>
+            <label class="opt"><input type="checkbox" id="a-M02" data-price="10000" data-name="彩排聲響與廳堂聲學指導"><b>彩排聲響與廳堂聲學指導</b><span class="p">10,000／天</span><span class="d">彩排時給予織度、強弱與擺位建議</span></label>
+          </div>
+        </div>
+        <div>
+          <span class="step-no">06</span><h3 class="big">校園優惠</h3>
+          <p class="hint">學生自治社團、學生個人或聯合獨奏會，且為學生自籌經費。學校公費、音樂班與校方委託不適用。</p>
+          <div class="opts">
+            <label class="opt" data-noaud="1"><input type="checkbox" id="a-campus"><b>符合校園優惠資格</b><span class="p" id="p-campus">− 2,000</span><span class="d">報價單會同時列出原價與折抵</span></label>
+          </div>
+        </div>
+        <div>
+          <span class="step-no">07</span><h3 class="big">演出資訊</h3>
+          <p class="hint">知道多少填多少，沒填也能送出。</p>
           <div class="fields">
             <label class="f"><span>演出單位</span><input id="f-org" autocomplete="organization"></label>
             <label class="f"><span>編制</span><select id="f-type"><option>管弦樂團</option><option>國樂團</option><option>管樂團</option><option>合唱團</option><option>獨奏・室內樂</option><option>比賽・甄選</option><option>其他</option></select></label>
             <label class="f"><span>演出日期</span><input id="f-date" type="date"></label>
             <label class="f"><span>場地</span><input id="f-venue"></label>
-            <label class="f"><span>聯絡人</span><input id="f-name" autocomplete="name"></label>
-            <label class="f"><span>電話或 LINE</span><input id="f-contact"></label>
             <label class="f full"><span>備註</span><textarea id="f-note" rows="2"></textarea></label>
           </div>
         </div>
         <div>
-          <h3>四・寄出詢價</h3>
-          <p style="color:var(--grey);font-size:14px">複製下方內容，寄至 <span class="mailto">henry0911849@gmail.com</span></p>
-          <textarea class="draft" id="out" readonly aria-label="詢價內容"></textarea>
+          <span class="step-no">08</span><h3 class="big">你的選配</h3>
+          <div class="summary" aria-live="polite">
+            <div id="lines"></div>
+            <div class="grand"><span>試算總價</span><b id="grand">NT$ 20,000</b></div>
+            <p class="note">新台幣，不另加營業稅，開立收據。試算金額以正式報價單為準。</p>
+          </div>
+          <div class="send">
+            <a class="btn-solid" id="send" href="https://form.jotform.com/263151592960056" target="_blank" rel="noopener">送出詢價</a>
+            <p>按下後會開啟詢價表單，選配內容與總價已經帶入。填上聯絡人與電話或 LINE，按送出即可。</p>
+            <div class="alt"><button class="link-line" type="button" id="copy">複製選配內容</button><span class="status" id="status" aria-live="polite" style="font-size:12.5px;color:var(--champagne)"></span></div>
+            <p>也可以複製後寄到 <span class="mailto">henry0911849@gmail.com</span></p>
+            <textarea class="draft" id="out" readonly aria-label="選配內容" rows="8"></textarea>
+          </div>
         </div>
       </form>
     </div>
   </section>
   <div class="totalbar gutter">
     <div class="inner in">
-      <div class="sum"><small id="sumLabel">標準方案</small><b id="total">NT$ 18,000</b></div>
-      <div class="act"><span class="status" id="status" aria-live="polite"></span><button class="btn-solid" type="button" id="copy" style="background:#fff;color:#0A0A0A;border-color:#fff">複製詢價內容</button></div>
+      <div class="sum"><small id="sumLabel">標準方案</small><b id="total">NT$ 20,000</b></div>
+      <div class="act"><a class="btn-solid" id="send2" href="https://form.jotform.com/263151592960056" target="_blank" rel="noopener">送出詢價</a></div>
     </div>
   </div>
 </div>
@@ -570,11 +770,11 @@ footer .legal{margin-top:56px;padding-top:24px;border-top:1px solid var(--hair-d
 <footer class="site gutter">
   <div class="inner">
     <div class="cols">
-      <div class="brand"><b>鹹豆漿藝術</b><span>Xian Dou Jiang · Art Studio</span><p style="margin-top:14px">音樂會錄影・現場收音・後期混音<br>新北市中和　服務台中以北</p></div>
+      <div class="brand"><b>鹹豆漿藝術</b><span>Saltysoymilk Art</span><p style="margin-top:14px">音樂會錄影・現場收音・後期混音<br>新北市中和　服務台中以北</p></div>
       <div><h5>Explore</h5><ul><li><a href="#services" data-go="services">服務方案</a></li><li><a href="#works" data-go="works">作品</a></li><li><a href="#about" data-go="about">關於</a></li><li><a href="#faq" data-go="faq">常見問題</a></li></ul></div>
       <div><h5>Contact</h5><ul><li style="user-select:all">henry0911849@gmail.com</li><li class="tbd">（待補）電話・LINE</li><li class="tbd">（待補）Facebook・YouTube</li></ul></div>
     </div>
-    <div class="legal"><span>© 2026 鹹豆漿藝術工作室</span><span>Concert Film &amp; Live Recording</span></div>
+    <div class="legal"><span>© 2026 鹹豆漿藝術工作室　統一編號 61296542</span><span>Concert Film &amp; Live Recording</span></div>
   </div>
 </footer>
 
@@ -606,32 +806,53 @@ footer .legal{margin-top:56px;padding-top:24px;border-top:1px solid var(--hair-d
   show((location.hash||"#home").slice(1),false);
 
   // configurator
-  const plans={basic:["基本方案",12000,"雙機位"],std:["標準方案",18000,"三機位"],flag:["旗艦方案",25000,"四機位多軌"]};
+  const FORM="https://form.jotform.com/263151592960056";
+  const plans={basic:["基本方案",15000,"雙機位"],std:["標準方案",20000,"三機位"],flag:["旗艦方案",32000,"四機位＋多軌錄音"],aud:["甄選・比賽錄影",6000,"單機定鏡"]};
   const fmt=n=>n.toLocaleString("en-US");
   const $=id=>document.getElementById(id);
   const form=$("qform");
+  const qty={};
+  form.querySelectorAll(".opt.qty").forEach(o=>{qty[o.dataset.id]=0;
+    o.addEventListener("click",e=>{const b=e.target.closest("button[data-d]");if(!b)return;
+      qty[o.dataset.id]=Math.max(0,Math.min(+o.dataset.max,qty[o.dataset.id]+(+b.dataset.d)));update();});});
   function update(){
     const p=form.querySelector('input[name="plan"]:checked').value;
     const [pn,pp,pd]=plans[p];
-    let total=pp, picked=[], ask=[];
-    form.querySelectorAll('input[type=checkbox]').forEach(c=>{
-      if(!c.checked)return;picked.push(c.dataset.name);
-      const v=+c.dataset.price; if(v)total+=v; else ask.push(c.dataset.name);
+    // availability
+    form.querySelectorAll(".opt").forEach(o=>{
+      const off=(p==="aud"&&o.dataset.noaud)||(p==="flag"&&o.dataset.noflag);
+      o.classList.toggle("off",!!off);
+      if(off){const c=o.querySelector("input");if(c)c.checked=false;if(o.dataset.id)qty[o.dataset.id]=0;}
     });
-    $("total").textContent="NT$ "+fmt(total);
-    $("sumLabel").textContent=pn+(picked.length?"・"+picked.join("・"):"")+(ask.length?"（洽詢項目另計）":"");
-    const v=id=>$(id).value.trim()||"（未填）";
-    $("out").value=["【音樂會錄影詢價】","演出單位："+v("f-org"),"編制："+$("f-type").value,"演出日期："+v("f-date"),"場地："+v("f-venue"),
-      "方案："+pn+"（"+pd+"）","加購："+(picked.length?picked.join("、"):"無"),
-      "試算：NT$ "+fmt(total)+(ask.length?"（不含洽詢項目："+ask.join("、")+"）":""),
-      "聯絡人："+v("f-name")+"　"+v("f-contact"),"備註："+v("f-note")].join("\n");
+    $("d-S04").textContent=p==="flag"?"旗艦方案已含多軌錄音":"加錄音師 1 位，主麥＋點麥多軌";
+    const camp=p==="flag"?4000:2000; $("p-campus").textContent="− "+fmt(camp);
+    const rows=[[pn+"（"+pd+"）",pp]];
+    form.querySelectorAll(".opt.qty").forEach(o=>{const n=qty[o.dataset.id];$("q-"+o.dataset.id).textContent=n;o.classList.toggle("on",n>0);
+      if(n)rows.push([o.dataset.name+" × "+n,n*+o.dataset.price]);});
+    form.querySelectorAll('.opt input[type=checkbox][data-price]').forEach(c=>{if(c.checked)rows.push([c.dataset.name,+c.dataset.price]);});
+    if($("a-campus").checked)rows.push(["校園優惠",-camp]);
+    const a=form.querySelector('input[name="area"]:checked');
+    if(+a.value)rows.push(["車馬費（"+a.dataset.name+"）",+a.value]);
+    let total=rows.reduce((t,r)=>t+r[1],0);
+    if($("a-rush").checked){const r=Math.round(total*0.3);rows.push(["急件（總價 30%）",r]);total+=r;}
+    const L=$("lines");L.textContent="";
+    rows.forEach(([n,v])=>{const d=document.createElement("div");d.className="line"+(v<0?" neg":"");
+      const s1=document.createElement("span"),s2=document.createElement("span");s1.textContent=n;s2.textContent=(v<0?"− ":"")+fmt(Math.abs(v));d.append(s1,s2);L.append(d);});
+    const tt="NT$ "+fmt(total);
+    $("total").textContent=tt;$("grand").textContent=tt;
+    $("sumLabel").textContent=pn+(rows.length>1?"＋"+(rows.length-1)+" 項":"");
+    const v=id=>$(id).value.trim();
+    const detail=rows.map(([n,x])=>n+"　"+(x<0?"-":"")+fmt(Math.abs(x))).join("\n");
+    $("out").value=["【音樂會錄影詢價】","演出單位："+(v("f-org")||"（未填）"),"編制："+$("f-type").value,"演出日期："+(v("f-date")||"（未填）"),"場地："+(v("f-venue")||"（未填）"),"地區："+a.dataset.name,"",detail,"","試算總價："+tt,"備註："+(v("f-note")||"無")].join("\n");
+    const q=new URLSearchParams({q5_textbox3:v("f-org"),q6_textbox4:$("f-type").value,q7_textbox5:v("f-date"),q8_textbox6:[a.dataset.name,v("f-venue")].filter(Boolean).join("　"),q9_textarea7:detail,q10_textbox8:tt,q11_textarea9:v("f-note")});
+    $("send").href=$("send2").href=FORM+"?"+q.toString();
   }
   form.addEventListener("input",update);form.addEventListener("change",update);
   form.addEventListener("submit",e=>e.preventDefault());
   $("copy").addEventListener("click",()=>{
     const t=$("out"), s=$("status");
     const fb=()=>{t.focus();t.select();s.textContent="已選取內容，請手動複製";};
-    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t.value).then(()=>{s.textContent="已複製，貼到信件即可寄出";},fb);}else fb();
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t.value).then(()=>{s.textContent="已複製";},fb);}else fb();
   });
   update();
 
@@ -657,6 +878,5 @@ footer .legal{margin-top:56px;padding-top:24px;border-top:1px solid var(--hair-d
   size();window.addEventListener("resize",()=>{size();if(reduce)draw();});draw();
 })();
 </script>
-
 </body>
 </html>
